@@ -1,0 +1,297 @@
+/*
+Colours: 
+navy - #021C41
+red - F13D3E
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #021C41;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+    transition: all 500ms linear;
+}
+
+nav {
+    margin: 0px 10%;
+    height: 80px;
+    transition: all 500ms linear;
+}
+
+.navimage {
+    height: 50px;
+    position: absolute;
+    padding-top: 15px;
+    transition: all 500ms linear;
+    z-index: 999;
+}
+
+.navimage2 {
+    height: 50px;
+    position: absolute;
+    padding-top: 15px;
+    transition: all 500ms linear;
+    z-index: 999;
+}
+
+.navbar {
+    float: right;
+    list-style: none;
+    display: flex;
+}
+
+.img1 {
+    opacity: 100;
+}
+
+.img2 {
+    opacity: 0;
+}
+
+.navitem {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
+    line-height: 80px;
+    transition: all 500ms linear;
+}
+
+.w {
+    width: 100px;
+}
+
+.navitem a {
+    color: white;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.navitem a::after {
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 30px;
+    display: block;
+    background-color: #F13D3E;
+    width: 0px;
+    transition: all 250ms linear;
+}
+
+.navitem a:hover::after {
+    width: 100px;
+}
+
+.navbar p {
+    display: inline-block;
+    line-height: 80px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    transition: all 500ms linear;
+    margin-left: 25px;
+}
+
+.scrolling {
+    background-color: white;
+    height: 60px;
+    transition: all 500ms linear;
+}
+
+.scrolling nav {
+    height: 60px;
+    transition: all 500ms linear;
+}
+
+.scrolling .navitem {
+    line-height: 60px;
+    transition: all 500ms linear;
+}
+
+.scrolling .navitem a {
+    color: #021C41;
+}
+
+.scrolling .navitem a::after {
+    top: 25px;
+}
+
+.scrolling .navbar p {
+    transition: all 500ms linear;
+    color: #021C41;
+    line-height: 60px;
+}
+
+.scrolling .navimage {
+    transition: all 250ms linear;
+    height: 35px;
+    padding-top: 12.5px;
+}
+
+.scrolling .img1 {
+    opacity: 0;
+}
+
+.scrolling .img2 {
+    opacity: 100;
+}
+
+.scrolling .navimage2 {
+    transition: all 500ms linear;
+    height: 35px;
+    padding-top: 12.5px;
+}
+
+.landing {
+    height: calc(100% + 80px);
+    width: 100%;
+    background-image: url(images/cartagena2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    padding-bottom: 5%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    overflow-x: hidden;
+}
+
+.landing b {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #021C41;
+    font-weight: 800;
+}
+
+.landing h1 {
+    font-size: 125px;
+}
+
+.landing p {
+    font-size: 25px;
+}
+
+.container {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.container h1 {
+    text-transform: lowercase;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+#about {
+    margin-bottom: 50px;
+}
+
+.half-img {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    display: block;
+}
+
+.half-img button {
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 5px solid white;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    transition: all 250ms linear;
+    z-index: 100;
+    left: 35%;
+    margin-top: 20%;
+}
+
+.half-img img {
+    width: 100%;
+    z-index: 50;
+}
+
+.half-img button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.half-text {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    display: block;
+}
+
+.half-text h2 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: lowercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.row p {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.row ul {
+    padding-left: 30px;
+}
+
+.row li {
+    padding-bottom: 10px;
+}
+
+.row {
+    box-sizing: border-box;
+    padding-bottom: 20.7%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    cursor: all-scroll;
+}

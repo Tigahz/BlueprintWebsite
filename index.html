@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <title>Blueprint Realism</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="slick.css">
+        <link rel="stylesheet" href="slick-theme.css">
+        <link rel=icon href="icon.jpg">
+    </head>
+    <body> 
+        <header>
+            <nav>
+                <a href="#top" class="img1"><img class="navimage" src="images/navimage.png"></a>
+                <a href="#top" class="img2"><img class="navimage2" src="images/navimage2.png"></a>
+                <ul class="navbar">
+                    <b><li class="navitem w"><a href="about.html">About</a></li></b>
+                    <b><li class="navitem w"><a href="apply.html">Apply</a></li></b>
+                    <b><li class="navitem w"><a href="portfolio.html">Portfolio</a></li></b>
+                    <!--<b><li class="navitem w"><a href="https://discord.gg/2fRgDqF4SB">Discord</a></li></b>-->
+                    <b><li class="navitem w"><a href="contact.html">Contact</a></li></b>
+                </ul>
+            </nav>
+        </header>
+        <section class="landing">
+            <b><h1>Blueprint Realism</h1></b>
+            <p>IP: mc.blueprint-realism.com</p>
+            <div class="slant"></div>
+        </section>
+        <section id="about" class="container">
+            <h1>About Us</h1>
+            <div>
+                <p>We are a creative server that strives to fufil one promise - to have the best, most realistic, highest quality builds that have ever been made in Minecraft.</p>
+                <p>Since our creation in 2015, Blueprint Realism has grown into a thriving community, partnered with three? other servers. With projects ranging from the World Trade Centre and the White House, to server-wide creations such as Anatora and Idaho, we have attempted what was never been done before.</p>
+                <p>At the moment, we have three main projects! Nations, run by Wessaux, and also two World Trade Centres, one by Jimphf, and the other by MrSquishyMan.</p>
+                <p>We welcome you to join today and see for yourself.</p>
+            </div>
+        </section>
+        <section id="apply">
+            <div class="container">
+                <h1>apply</h1>
+            </div>
+            <div class="row">
+                <div class="half-img left">
+                    <img src="images/wtc.jpg">
+                    <a href="#"><button>Apply for Builder</button></a>
+                </div>
+                <div class="half-text right">
+                    <div class="container">
+                        <h2>Builder</h2>
+                        <p>Builder is the Level 1 builder rank...</p>
+                        <p>Perks:</p>
+                        <ul>
+                            <li>Access to plotworld</li>
+                            <li>More stuff...</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="half-text left">
+                    <div class="container">
+                        <h2>Architect/Engineer/Decorator</h2>
+                        <p>These are the Level 2 builder ranks...</p>
+                        <p>Perks:</p>
+                        <ul>
+                            <li>Access to plotworld</li>
+                            <li>More stuff...</li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="half-img right">
+                    <img src="images/wtc.jpg">
+                    <a href="#"><button>Apply for these ranks</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="half-text right">
+                    <div class="container">
+                        <h2>Specialized</h2>
+                        <p>Specialized is the Level 3 builder rank...</p>
+                        <p>Perks:</p>
+                        <ul>
+                            <li>Access to plotworld</li>
+                            <li>More stuff...</li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="half-img left">
+                    <img src="images/wtc.jpg">
+                    <a href="#"><button>Apply for Specialized</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="half-text left">
+                    <div class="container">
+                        <h2>Trusted</h2>
+                        <p>This is for the most trusted players on the server, and cannot be applied for.</p>
+                        <p>Perks:</p>
+                        <ul>
+                            <li>Access to plotworld</li>
+                            <li>More stuff...</li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="half-img right">
+                    <img src="images/wtc.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="sliderContent container">
+                <h1>portfolio</h1>
+                <div class="slider">
+                    <div><img src="images/cartagena.jpg"></div>
+                    <div><img src="images/wtc2.jpg"></div>
+                    <div><img src="images/ids.jpg"></div>
+                    <div><img src="images/argon.jpg"></div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function() {
+                let header = document.querySelector('header');
+                let windowPosition = window.scrollY > 0;
+                header.classList.toggle('scrolling', windowPosition);
+            });
+        </script>
+        <script src="scroll.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
+        <script src="slick.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.slider').slick({
+                    dots: true,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                });
+            });
+        </script>
+    </body>
+</html>
